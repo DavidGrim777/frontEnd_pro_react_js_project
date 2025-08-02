@@ -8,17 +8,19 @@
   padding: 40px;
   margin: 30px;
   border-radius: 8px;
+  background-color: aliceblue;
+  
 }
-.card_title {
-  font-size: 30px;
+.card__name {
+  font-size: 35px;
   color: purple;
   font-weight: bold;
 }
-.avatar {
+.card__avatar {
   width: 150px;
   height: 150px;
 }
-.card-info {
-  font-size: 24px;
+.card__info {
+  font-size: 20px;
   color: black;
 }
