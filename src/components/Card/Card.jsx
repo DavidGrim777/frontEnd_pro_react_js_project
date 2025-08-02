@@ -1,4 +1,4 @@
-import homerSimpson from "./data.js";
+// import homerSimpson from "./data.js";
 
 import "./styles.css";
 
@@ -26,7 +26,9 @@ import "./styles.css";
 // }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-function Card() {
+// props - это обьект, с помощью которого мы передаем данные из родительского компонента в дочерний
+
+function Card({ avatarURL = "", name = "Name", job = "-", hobby = "-" }) {
   // const homerSimpson = {
   //   avatarURL:
   //     "https://medias.artmajeur.com/standard/15687763_img-20220426-182732.jpg?v=1738650820",
@@ -38,10 +40,10 @@ function Card() {
 
   return (
     <div className="card">
-      <img className="card__avatar" src={homerSimpson.avatarURL} alt="Homer Simpson" />
-      <p className="card__name">имя и фамилия: {homerSimpson.name}</p>
-      <p className="card__info">род деятельности: {homerSimpson.job}</p>
-      <p className="card__info">хобби: {homerSimpson.hobby}</p>
+      <img className="card__avatar" src={avatarURL} alt="Homer Simpson" />
+      <p className="card__name">имя и фамилия: {name}</p>
+      <p className="card__info">род деятельности: {job}</p>
+      <p className="card__info">хобби: {hobby}</p>
     </div>
   );
 }

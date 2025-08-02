@@ -1,7 +1,19 @@
 import "./styles.css";
 
-function Button () {
-    return <button className="button_component">Send</button>;
+function Button({ buttonName = "Send", onClick = () => {}, children }) {
+  return (
+    <button className="button_component" onClick={onClick}>
+
+      {/* {buttonName}                   //Показаны оба send + icon */}
+      {/* {children ? "" : buttonName}   //Показан icon */}
+
+       {/* Улосвный рендеринг */}
+
+      {/* {children && buttonName}          //если children true = send + icon / если children false = icon */}
+      {!children && buttonName}
+      {children}
+    </button>
+  );
 }
 
 export default Button;
