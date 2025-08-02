@@ -1,0 +1,7 @@
+.homework02_page{
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    gap: 40px;
+    background-color: brown;
+}

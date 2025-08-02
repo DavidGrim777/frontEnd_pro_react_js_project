@@ -1,0 +1,14 @@
+.button_component {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    padding: o;
+    height: 70px;
+    width: 100%;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
