@@ -1,0 +1,9 @@
+.homework_03_page{
+    display: flex;
+    flex: 1;
+    padding: 40px;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(169, 200, 226);
+}

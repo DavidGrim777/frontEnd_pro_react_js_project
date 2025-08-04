@@ -1,0 +1,16 @@
+.login_container {
+  width: 590px;
+  min-height: 470px;
+  max-height: fit-content;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.login_title {
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+}
