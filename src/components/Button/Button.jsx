@@ -4,7 +4,7 @@ function Button({
   buttonName = "Send",
   onClick = () => {},
   children,
-  type = "button",
+  type,
 }) {
   return (
     <button className="button_component" onClick={onClick} type={type}>
